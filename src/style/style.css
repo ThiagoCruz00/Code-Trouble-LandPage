@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap'); /* Hind */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+/* Hind */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Lora */
 
-header{
+header {
     display: flex;
     align-items: center;
     text-align: center;
@@ -10,19 +15,19 @@ header{
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.1);
 }
 
-header > nav{
+header>nav {
     display: flex;
     gap: 20px;
-    
+
 }
 
-header > nav > a{
+header>nav>a {
     color: var(--preto);
     font-family: 'Hind';
     font-size: 16px;
 }
 
-header > input{
+header>input {
     text-align: left;
     font-family: 'Hind';
     font-size: 14px;
@@ -39,11 +44,92 @@ header > input{
 
 }
 
-header > input::placeholder{
+header>input::placeholder {
     background-position: 15px;
 }
 
-.login{
+.login {
     display: flex;
     gap: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+.text-cadastro {
+    width: 40%;
+}
+
+.text-cadastro>h1 {
+    font-size: 48px;
+    font-family: 'Montserrat';
+    padding-bottom: 20px;
+}
+
+.text-cadastro>h1>span {
+    background-color: var(--verde);
+    height: 46px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 85%, var(--verde) 70%);
+    padding-bottom: 4px;
+}
+
+.text-cadastro>h1>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 4px;
+    background-color: var(--verde);
+    z-index: -1;
+    /* Mantém a linha atrás do texto */
+}
+
+.text-cadastro > h3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lora';
+    color: var(--preto);
+    padding-bottom: 20px;
+}
+
+.text-cadastro > p{
+    font-size: 16px;
+    font-family: 'Hind';
+    color: var(--preto);
+    padding-bottom: 40px;
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.cadastro > button{
+    width: 250px;
+    height: 45px;
+    background-color: var(--verde);
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Hind';
+    color: var(--branco);
+
+    text-align: center;
+    padding-top: 3px;
+}
+
+.cadastro > a{
+    display: flex;
+    align-items: center;
+    color: var(--azul);
 }
