@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap'); /* Hind */
+
+header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    justify-content: space-between;
+
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.1);
+}
+
+header > nav{
+    display: flex;
+    gap: 20px;
+    
+}
+
+header > nav > a{
+    color: var(--preto);
+    font-family: 'Hind';
+    font-size: 16px;
+}
+
+header > input{
+    text-align: left;
+    font-family: 'Hind';
+    font-size: 14px;
+
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    width: 700px;
+    height: 40px;
+
+    background-image: url("../assets/img/Lupa.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+
+}
+
+header > input::placeholder{
+    background-position: 15px;
+}
+
+.login{
+    display: flex;
+    gap: 30px;
+}
