@@ -28,9 +28,3 @@ O design da LandPage foi criado com foco na simplicidade e clareza, garantindo:
 
 ---
 
-## 🚀 Próximos Passos
-- Finalizar a integração da LandPage com o site principal da empresa **Suporte de Domingo**.
-- Melhorar a experiência do usuário com novos ajustes no design.
-
----
-
