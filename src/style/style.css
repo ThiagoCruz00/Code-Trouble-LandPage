@@ -70,12 +70,12 @@ main {
 }
 
 .text-cadastro>h1>span {
-    background-color: var(--verde);
+    background-color: #92dba3;
     height: 46px;
     border-radius: 2px;
     position: relative;
     display: inline-block;
-    background: linear-gradient(to bottom, transparent 85%, var(--verde) 70%);
+    background: linear-gradient(to bottom, transparent 85%, #92dba3 70%);
     padding-bottom: 4px;
 }
 
@@ -86,12 +86,12 @@ main {
     right: 0;
     bottom: -4px;
     height: 4px;
-    background-color: var(--verde);
+    background-color: #92dba3;
     z-index: -1;
     /* Mantém a linha atrás do texto */
 }
 
-.text-cadastro > h3{
+.text-cadastro>h3 {
     font-size: 24px;
     font-weight: 400;
     font-family: 'Lora';
@@ -99,21 +99,21 @@ main {
     padding-bottom: 20px;
 }
 
-.text-cadastro > p{
+.text-cadastro>p {
     font-size: 16px;
     font-family: 'Hind';
     color: var(--preto);
     padding-bottom: 40px;
 }
 
-.cadastro{
+.cadastro {
     display: flex;
     align-items: center;
     text-align: center;
     gap: 20px;
 }
 
-.cadastro > button{
+.cadastro>button {
     width: 250px;
     height: 45px;
     background-color: var(--verde);
@@ -126,10 +126,116 @@ main {
 
     text-align: center;
     padding-top: 3px;
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.cadastro > a{
+.cadastro>button:hover{
+    background-color: var(--branco);
+    border: 1px solid var(--verde);
+    color: var(--verde);
+}
+
+.cadastro>a {
     display: flex;
     align-items: center;
+    color: var(--azul);
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-bottom: 60px;
+}
+
+.barra {
+    width: 1052px;
+    border-top: 1px solid var(--cinza);
+    border-radius: 3px;
+    margin-top: 120px;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 70px;
+    width: 1054px;
+}
+
+.text-blog {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
+}
+
+.text-blog>h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: var(--preto);
+
+    padding-bottom: 20px;
+}
+
+.text-blog>h1>span {
+    background-color: #95a0d0;
+    height: 35px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 85%, #95a0d0 70%);
+    padding-bottom: 4px;
+}
+
+.text-blog>h1>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 10px;
+    background-color: #95a0d0;
+    z-index: -1;
+}
+
+.text-blog > h3{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lora';
+    color: var(--cinza-escuro);
+    padding-bottom: 20px;
+}
+
+.text-blog > p{
+    font-size: 16px;
+    color: var(--cinza-escuro);
+    font-family: 'Hind';
+
+    padding-bottom: 30px;
+}
+
+.text-blog > button{
+    width: 250px;
+    height: 45px;
+
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 18px;
+    font-family: 'Hind';
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.text-blog > button:hover{
+    background-color: var(--branco);
+    border: 1px solid var(--azul);
     color: var(--azul);
 }
